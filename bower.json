@@ -10,13 +10,31 @@
     "tests"
   ],
   "dependencies": {
-    "angularjs": "~1.4.3",
+    "angularjs": "~1.4.4",
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
-    "angular-messages": "~1.4.3",
-    "angular-ui-growl": "~0.0.1"
+    "angular-messages": "~1.4.4",
+    "angular-ui-growl": "~0.0.1",
+    "angular-ui-grid": "~3.0.4",
+    "angular-growl-v2": "~0.7.5",
+    "angular-material": "~0.10.1",
+    "oclazyload": "~1.0.4",
+    "ui-router": "~0.2.15"
   },
   "resolutions": {
     "jquery": "2.1.4"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "angular-ui-growl": {
+      "main": [
+        "css/growl",
+        "src/growl"
+      ]
+    }
   }
 }

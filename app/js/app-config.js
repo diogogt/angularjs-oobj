@@ -1,16 +1,8 @@
 /**
  * Created by Diogo on 10/08/2015.
  */
-angular.module('helloWorldApp', [])
-    .controller('HelloWorldController', HelloWorldController);
-
-    /**
-.controller('HelloWorldController', ['$scope', function($scope){
-    $scope.nome='Diogo';
-}]);
-     */
-
-    /**mais limpo */
+angular.module('helloWorldApp', ['ngMessages', 'ui.growl','ui.grid','ui.grid.resizeColumns',
+    'ui.grid.selection', 'ngMaterial', 'ui.router', 'oobj-directives'])
 
     HelloWorldController.$inject = ['$scope']
 function HelloWorldController($scope){

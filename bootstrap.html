@@ -45,11 +45,10 @@
                        ng-minlength="5"
                        ng-maxlength="50"
                        required>
-                <div class="help-block" ng-messages="myForm.itNome.$error" ng-if="myForm.$pristine">
+                <div ng-messages="myForm.itNome.$error">
                     <p ng-message="minlength">Campo muito curto</p>
                     <p ng-message="maxlength">Campo muito longo</p>
                     <p ng-message="required">Campo obrigatório</p>
-
                 </div>
             </div>
 
@@ -62,16 +61,11 @@
             </div>
 
             <div class="form-group col-sm-3">
-                <label for="idNascimeto">Nascimento</label>
+                <label for="idNascimento">Nascimento</label>
                 <input type="date"
                        class="form-control"
-                       name="idNascimeto"
-                       id="idNascimeto"
+                       id="idNascimento"
                        ng-model="pessoa.nascimento">
-
-                <div ng-messages="myForm.idNascimeto.$error">
-
-                </div>
             </div>
 
             <div class="form-group col-sm-3">
