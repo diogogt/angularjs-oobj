@@ -9,7 +9,7 @@ oobjInputText.$inject = ['rootScope'];
 function oobjInputText() {
         return {
             restrict: 'E',
-            template: 'app/directives/text-input/text-input.html',
+            template: 'app/directives/oobj-text-input/oobj-oobj-text-input.html',
             scope: {
                 ngModel: '=',
                 ngDisable: '=?',
@@ -19,8 +19,8 @@ function oobjInputText() {
             link: function($scope, element, attrs){
                 $scope.classInputText = 'col-sm-3';
 
-                if(angular.isDefined($scope.colSpan)){
-                    $scope.classInputText = 'col-sm-' + $scope.colSpan;
+                if(angular.isDefined($scope.colspan)){
+                    $scope.classInputText = 'col-sm-' + $scope.colspan;
                 }
             }
         }
